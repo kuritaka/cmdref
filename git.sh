@@ -11,26 +11,41 @@ git commit -m "xxxxxxxxxxx"
 git push
 
 
+
 ##Branch
-git branch #Check 
-git branch new-branch-name
-git checkout new-branch-name
+git branch #Check
+
+### create branch and checkout
+git checkout main
+git branch feature/new-branch-name
+git checkout feature/new-branch-name
+
+### create branch and checkout with same time
+git checkout main
+git checkout -b feature/new-branch-name
+
+git rebase main
+
 
 #Remote
 git remote -v  #Check
 git remote add origin https://github.com/UserName/ProjectName
 
-git push origin new-branch-name
+git push origin feature/new-branch-name
 git push origin main
 
 
 git reflog
 
+
+
+
+
 #--------------------------------------------------------
 # Git Configuratioin
 #--------------------------------------------------------
 ### Check Configuration  ###
-cat ~/.gitconfig 
+cat ~/.gitconfig
 git config --list
 
 
@@ -38,7 +53,7 @@ git config --list
 $ which vim
 /usr/bin/vim
 $ git config --global core.editor "/usr/bin/vim"
-$ cat ~/.gitconfig 
+$ cat ~/.gitconfig
 
 Windows
 [core]
