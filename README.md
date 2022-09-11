@@ -1,4 +1,4 @@
-# Command Cheat Sheet
+# mdrefnet
 
 
 ## About
@@ -12,8 +12,8 @@ https://cmdref.net/
 
 ```
 ~]$ cd
-~]$ git clone https://github.com/kuritaka/command-cheatsheet
-~]$ ls command-cheatsheet
+~]$ git clone https://github.com/kuritaka/cmdrefnet
+~]$ ls cmdrefnet
 ```
 
 
@@ -22,12 +22,17 @@ https://cmdref.net/
 ```
 $ tree -a -I .git
 .
-|-- README.md
-|-- cd
-|-- git
-|-- ssh
-|-- vagrant
-`-- vim
+├── README.md
+├── cd.sh
+├── git.sh
+├── linux
+│   ├── date.sh
+│   └── dig.sh
+├── ssh.sh
+├── vagrant.sh
+└── vim.sh
+
+1 directory, 8 files
 ```
 
 
