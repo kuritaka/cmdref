@@ -4,11 +4,18 @@
 #https://cmdref.net/programming/shell/index.html
 #
 
-TDAY=$(date +%Y%m%d)
-BDATE=$(date --date '1day ago' +%Y%m%d)
+cd `dirname $0`
+pwd
+
+
+TDAY=$(date +"%Y%m%d")
+YEAR=$(date +"%Y")
+BDATE=$(date --date '1day ago' +"%Y%m%d")
 
 echo "TDAY: $TDAY"
+echo "YEAR: $YEAR"
 echo "BDATE: $BDATE"
+
 
 DIR="/tmp/test-directory"
 [ -d "$DIR" ] || echo "mkdir $DIR"
