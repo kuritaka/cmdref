@@ -2,29 +2,32 @@
 # cheat sheet for git
 #########################################################
 
+
+
 #--------------------------------------------------------
+#Branch
 #--------------------------------------------------------
-git status
+git branch #Check branch
 
-git add .
-git commit -m "xxxxxxxxxxx"
-git push
-
-
-
-##Branch
-git branch #Check
 
 ### create branch and checkout
-git checkout main
+git checkout main #move to main
+git pull
 git branch feature/new-branch-name
 git checkout feature/new-branch-name
 
 ### create branch and checkout with same time
 git checkout main
+git pull
 git checkout -b feature/new-branch-name
 
+
+#
 git rebase main
+
+
+git add .
+git commit -m "[update] #PR Number summary"
 
 
 #Remote
@@ -32,12 +35,19 @@ git remote -v  #Check
 git remote add origin https://github.com/UserName/ProjectName
 
 git push origin feature/new-branch-name
+or
 git push origin main
 
 
 git reflog
 
 
+git checkout main
+git branch  # branch list
+git branch -D feature/new-branch  #delete branch
+
+
+git pull origin main
 
 
 
@@ -62,7 +72,7 @@ editor = P:/win-soft/free/cmder/cmder/vendor/git-for-windows/usr/bin/vim
 
 
 #--------------------------------------------------------
-# GitHub
+# How to start GitHub
 #--------------------------------------------------------
 ## create a new repository on the command line
 echo "# command-cheatsheet" >> README.md
