@@ -11,19 +11,25 @@ git commit -m "xxxxxxxxxxx"
 git push
 
 
+#--------------------------------------------------------
+#Branch
+#--------------------------------------------------------
+git branch #Check branch
 
-##Branch
-git branch #Check
 
 ### create branch and checkout
-git checkout main
+git checkout main #move to main
+git pull
 git branch feature/new-branch-name
 git checkout feature/new-branch-name
 
 ### create branch and checkout with same time
 git checkout main
+git pull
 git checkout -b feature/new-branch-name
 
+
+#
 git rebase main
 
 
@@ -36,7 +42,6 @@ git push origin main
 
 
 git reflog
-
 
 
 
@@ -62,7 +67,7 @@ editor = P:/win-soft/free/cmder/cmder/vendor/git-for-windows/usr/bin/vim
 
 
 #--------------------------------------------------------
-# GitHub
+# How to start GitHub
 #--------------------------------------------------------
 ## create a new repository on the command line
 echo "# command-cheatsheet" >> README.md
