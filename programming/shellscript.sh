@@ -7,6 +7,9 @@
 cd `dirname $0`
 pwd
 
+SCRIPT_DIR=$(cd $(dirname $0) ; pwd)
+echo "\$SCRIPT_DIR = $SCRIPT_DIR"
+
 
 TDAY=$(date +"%Y%m%d")
 YEAR=$(date +"%Y")
@@ -20,7 +23,12 @@ echo "BDATE: $BDATE"
 DIR="/tmp/test-directory"
 [ -d "$DIR" ] || echo "mkdir $DIR"
 
-
+check_arg(){
+if [ -z "$1" ]; then
+    echo "Error:  argument \$1 is null"
+    #exit 1
+fi
+}
 
 check_user(){
 if [ "$(whoami)" != "root" ]; then
@@ -48,5 +56,6 @@ OUT
 
 
 #check_user
+check_arg
 check_hostname
 check_here

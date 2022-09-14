@@ -7,19 +7,20 @@
 #--------------------------------------------------------
 #Branch
 #--------------------------------------------------------
-git branch #Check branch
+git branch # Check branch
 
-
-### create branch and checkout
-git checkout main #move to main
-git pull
-git branch feature/new-branch-name
-git checkout feature/new-branch-name
 
 ### create branch and checkout with same time
 git checkout main
 git pull
 git checkout -b feature/new-branch-name
+
+### or create branch and checkout
+git checkout main # move to main
+git pull
+git branch feature/new-branch-name
+git checkout feature/new-branch-name
+
 
 
 #
@@ -44,7 +45,7 @@ git reflog
 
 git checkout main
 git branch  # branch list
-git branch -D feature/new-branch  #delete branch
+git branch -D feature/new-branch  # delete branch
 
 
 git pull origin main
@@ -68,6 +69,7 @@ $ cat ~/.gitconfig
 Windows
 [core]
 editor = P:/win-soft/free/cmder/cmder/vendor/git-for-windows/usr/bin/vim
+
 
 
 
