@@ -15,10 +15,10 @@ ueradd USER1
 useradd -u UID -g GROUP -G GROUP1,GROUP2 -s /bin/bash -d HOME_DIR LOGIN
 
 
-#How to create Adminuser on RHEL
+# useradd to create Adminuser on RHEL
 useradd -G wheel USER1
 
-#How to create Adminiuser on Ubuntu
+# useradd to create Adminiuser on Ubuntu
 useradd -m -s /bin/bash -G sudo USER2
 
 

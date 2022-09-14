@@ -1,4 +1,4 @@
-# cmdrefnet
+# cmdref
 
 
 ## About cmdrefnet
@@ -7,19 +7,78 @@ See cmdref.net for more information on the command.
 
 https://cmdref.net/
 
+### Example
 
-## How to use cmdrefnet
+```
+~]$ grep_cmdref useradd
+/home/taka/cmdref/linux/allcommand_user_group.sh         # useradd
+/home/taka/cmdref/linux/allcommand_user_group.sh         useradd -u UID -g GROUP -G GROUP1,GROUP2 -s /bin/bash -d HOME_DIR LOGIN
+/home/taka/cmdref/linux/allcommand_user_group.sh         # useradd to create Adminuser on RHEL
+/home/taka/cmdref/linux/allcommand_user_group.sh         useradd -G wheel USER1
+/home/taka/cmdref/linux/allcommand_user_group.sh         # useradd to create Adminiuser on Ubuntu
+/home/taka/cmdref/linux/allcommand_user_group.sh         useradd -m -s /bin/bash -G sudo USER2
+```
 
+
+
+## How to use cmdref
+
+### Prepare
 ```
 ~]$ cd
-~]$ git clone https://github.com/kuritaka/cmdrefnet
-~]$ ls cmdrefnet
-~]$ grep -r <KEYWORD> cmdrefnet
+~]$ git clone https://github.com/kuritaka/cmdref
+~]$ cd cmdref
+~]$ chmod 755 *.sh
+
+~]$ alias grep_cmdref="~/cmdref/grep_cmdref.sh" >> ~/.bashrc
 ```
 
-### Example
+### Execute
 ```
-~]$ grep -r chrony cmdrefnet
+~]$ grep_cmdref <KEYWORD>
+```
+
+```
+#more detail
+~]$ view /xxxx/xxxx/xxxx/file
+```
+
+
+## How to use cmdref temporarily
+
+### Prepare
+```
+~]$ cd
+~]$ git clone https://github.com/kuritaka/cmdref
+~]$ cd cmdref
+~]$ chmod 755 *.sh
+```
+
+### Execute
+```
+~]$ ./grep_cmdref.sh <KEYWORD>
+```
+
+more detail
+```
+~]$ view /xxxx/xxxx/xxxx/file
+```
+
+
+### Example
+
+```
+~]$ ./grep_cmdref.sh useradd
+/home/taka/cmdref/linux/allcommand_user_group.sh         # useradd
+/home/taka/cmdref/linux/allcommand_user_group.sh         useradd -u UID -g GROUP -G GROUP1,GROUP2 -s /bin/bash -d HOME_DIR LOGIN
+/home/taka/cmdref/linux/allcommand_user_group.sh         # useradd to create Adminuser on RHEL
+/home/taka/cmdref/linux/allcommand_user_group.sh         useradd -G wheel USER1
+/home/taka/cmdref/linux/allcommand_user_group.sh         # useradd to create Adminiuser on Ubuntu
+/home/taka/cmdref/linux/allcommand_user_group.sh         useradd -m -s /bin/bash -G sudo USER2
+```
+
+```
+~]$ grep -r chrony cmdref
 cmdrefnet/linux/time_ntp_chrony_ptp/chrony.sh:chronyc sources
 cmdrefnet/linux/time_ntp_chrony_ptp/chrony.sh:chronyc sources -v
 cmdrefnet/linux/time_ntp_chrony_ptp/chrony.sh:chronyc sourcestats # check offset
