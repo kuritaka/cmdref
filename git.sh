@@ -7,19 +7,19 @@
 #--------------------------------------------------------
 #Branch
 #--------------------------------------------------------
-git branch # Check branch
+git branch # check branch in local
 
 
-### create branch and checkout with same time
+### Method 1: create branch and checkout with same time
 git checkout main
 git pull
-git checkout -b feature/new-branch-name
+git checkout -b new-branch-name
 
-### or create branch and checkout
+### Method 2: create branch and checkout
 git checkout main # move to main
 git pull
-git branch feature/new-branch-name
-git checkout feature/new-branch-name
+git branch new-branch-name
+git checkout new-branch-name
 
 
 
@@ -27,7 +27,7 @@ git checkout feature/new-branch-name
 git rebase main
 
 
-git add .
+git add -A
 git commit -m "[update] #PR Number summary"
 
 
@@ -35,7 +35,7 @@ git commit -m "[update] #PR Number summary"
 git remote -v  #Check
 git remote add origin https://github.com/UserName/ProjectName
 
-git push origin feature/new-branch-name
+git push origin new-branch-name
 or
 git push origin main
 
@@ -45,7 +45,7 @@ git reflog
 
 git checkout main
 git branch  # branch list
-git branch -D feature/new-branch  # delete branch
+git branch -D new-branch  # delete branch
 
 
 git pull origin main
@@ -82,11 +82,11 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/kuritaka/command-cheatsheet.git
+git remote add origin https://github.com/kuritaka/cmderf.git
 git push -u origin main
 
 ##…or push an existing repository from the command line
-git remote add origin https://github.com/kuritaka/command-cheatsheet.git
+git remote add origin https://github.com/kuritaka/cmdref.git
 git branch -M main
 git push -u origin main
 
