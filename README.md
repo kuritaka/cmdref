@@ -30,7 +30,10 @@ https://cmdref.net/
 ~]$ cd cmdref
 ~]$ chmod 755 *.sh
 
+#Using bash
 ~]$ alias grep_cmdref="~/cmdref/grep_cmdref.sh" >> ~/.bashrc
+#Using zsh
+~]$ alias grep_cmdref="~/cmdref/grep_cmdref.sh" >> ~/.zshrc
 ```
 
 ### Execute
