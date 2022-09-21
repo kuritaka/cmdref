@@ -62,7 +62,7 @@ usermod -u UID USER # change UID
 #----------------------------
 chage -l USER # check
 chage -M 90 USER # the password expires day set 90days
-
+change -d 0 USER # force a user to change their password at next login
 
 #----------------------------
 # groupadd
