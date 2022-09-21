@@ -1,7 +1,7 @@
 # cmdref
 
 
-## About cmdrefnet
+## About cmdref
 This is my command cheat sheet.
 See cmdref.net for more information on the command.
 
@@ -10,7 +10,7 @@ https://cmdref.net/
 ### Example
 
 ```
-~]$ grep_cmdref useradd
+~]$ cmdref-grep useradd
 /home/taka/cmdref/linux/allcommand_user_group.sh         # useradd
 /home/taka/cmdref/linux/allcommand_user_group.sh         useradd -u UID -g GROUP -G GROUP1,GROUP2 -s /bin/bash -d HOME_DIR LOGIN
 /home/taka/cmdref/linux/allcommand_user_group.sh         # useradd to create Adminuser on RHEL
@@ -31,9 +31,9 @@ https://cmdref.net/
 ~]$ chmod 755 *.sh
 
 #Using bash
-~]$ alias grep_cmdref="~/cmdref/grep_cmdref.sh" >> ~/.bashrc
+~]$ alias cmdref-grep="~/cmdref/cmdref-grep.sh" >> ~/.bashrc
 #Using zsh
-~]$ alias grep_cmdref="~/cmdref/grep_cmdref.sh" >> ~/.zshrc
+~]$ alias cmdref-grep="~/cmdref/cmdref-grep.sh" >> ~/.zshrc
 ```
 
 ### Execute
@@ -71,7 +71,7 @@ more detail
 ### Example
 
 ```
-~]$ ./grep_cmdref.sh useradd
+~]$ cmdref-grep useradd
 /home/taka/cmdref/linux/allcommand_user_group.sh         # useradd
 /home/taka/cmdref/linux/allcommand_user_group.sh         useradd -u UID -g GROUP -G GROUP1,GROUP2 -s /bin/bash -d HOME_DIR LOGIN
 /home/taka/cmdref/linux/allcommand_user_group.sh         # useradd to create Adminuser on RHEL

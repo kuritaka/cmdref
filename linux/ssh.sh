@@ -12,8 +12,7 @@ ssh -i ./ssh/xxxxx.pub   user@x.x.x.x
 ########################################################
 # Hwo to create SSH Key
 ########################################################
-# RSA (ssh version2) : Recommend Key
-ssh-keygen -t rsa -C "comment"
+ssh-keygen -t rsa -C "comment"     # RSA (ssh version2) : Recommend Key
 
 
 cd              # change home directory
