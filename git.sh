@@ -43,7 +43,7 @@ git push origin main
 git reflog
 
 
-git checkout main
+git checkout main  # got to main branch
 git branch  # branch list
 git branch -D new-branch  # delete branch
 
