@@ -13,6 +13,14 @@
 :set ft=junos
 
 
+#--------------------------------------------------
+# vimdiff (vim -d)
+#--------------------------------------------------
+Ctrl-W Ctrl-W    # vimdiff for change panel
+
+dp  #vimdiff to merge (diff put)
+do  #vimdiff to mgerge (diff obtain)
+
 
 #--------------------------------------------------
 # Netrw
