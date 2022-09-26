@@ -22,11 +22,11 @@ git branch new-branch-name
 git checkout new-branch-name
 
 
-
 #
 git rebase main
 
 
+git staus
 git add -A
 git commit -m "[update] #PR Number summary"
 
@@ -35,21 +35,22 @@ git commit -m "[update] #PR Number summary"
 git remote -v  #Check
 git remote add origin https://github.com/UserName/ProjectName
 
-git push origin new-branch-name
+git push origin new-branch-name #push to new-branch-name
 or
-git push origin main
+git push origin main #push to main
 
 
 git reflog
 
 
-git checkout main  # got to main branch
 git branch  # branch list
+git checkout main  # got to main branch
 git branch -D new-branch  # delete branch
 
 
 git pull origin main
-
+or
+git pull
 
 
 #--------------------------------------------------------

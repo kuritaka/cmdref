@@ -38,7 +38,7 @@ https://cmdref.net/
 
 ### Execute
 ```
-~]$ grep_cmdref <KEYWORD>
+~]$ cmdref-grep <KEYWORD>
 ```
 
 ```
