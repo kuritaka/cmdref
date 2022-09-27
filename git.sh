@@ -8,7 +8,8 @@
 #Branch
 #--------------------------------------------------------
 git branch # check branch in local
-
+git branch -r # (or git branch --remotes) # show remote branches
+git branch -a # (or git branch --all) # show all branches both local and remote
 
 ### Method 1: create branch and checkout with same time
 git checkout main
@@ -37,7 +38,7 @@ git remote add origin https://github.com/UserName/ProjectName
 
 git push origin new-branch-name #push to new-branch-name
 or
-git push origin main #push to main
+git push origin main #push to remote main, we don't recommend to use this.
 
 
 git reflog
@@ -51,6 +52,29 @@ git branch -D new-branch  # delete branch
 git pull origin main
 or
 git pull
+
+
+#--------------------------------------------------------
+#git diff
+# I use git difftool (alias git dt) rather than git diff.
+#--------------------------------------------------------
+# Comparing files
+git diff file   (or git diff HEAD file) # Comparing files
+
+git diff --cached  file
+
+git diff main new_branch  file # Comparing files from two branches
+
+
+# Comparing branches
+git diff branch1..other-feature-branch   # Comparing two branches
+
+git diff SHA..other-SHA   # Comparing two branches
+
+
+git diff --name-only
+
+
 
 
 #--------------------------------------------------------
