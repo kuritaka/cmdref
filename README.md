@@ -10,7 +10,7 @@ https://cmdref.net/
 ### Example
 
 ```
-~]$ cmdref-grep useradd
+~]$ cmdrefgrep useradd
 /home/taka/cmdref/linux/allcommand_user_group.sh         # useradd
 /home/taka/cmdref/linux/allcommand_user_group.sh         useradd -u UID -g GROUP -G GROUP1,GROUP2 -s /bin/bash -d HOME_DIR LOGIN
 /home/taka/cmdref/linux/allcommand_user_group.sh         # useradd to create Adminuser on RHEL
@@ -31,14 +31,14 @@ https://cmdref.net/
 ~]$ chmod 755 *.sh
 
 #Using bash
-~]$ alias cmdref-grep="~/cmdref/cmdref-grep.sh" >> ~/.bashrc
+~]$ alias cmdrefgrep="~/cmdref/cmdrefgrep.sh" >> ~/.bashrc
 #Using zsh
-~]$ alias cmdref-grep="~/cmdref/cmdref-grep.sh" >> ~/.zshrc
+~]$ alias cmdrefgrep="~/cmdref/cmdrefgrep.sh" >> ~/.zshrc
 ```
 
 ### Execute
 ```
-~]$ cmdref-grep <KEYWORD>
+~]$ cmdrefgrep <KEYWORD>
 ```
 
 ```
@@ -47,31 +47,10 @@ https://cmdref.net/
 ```
 
 
-## How to use cmdref temporarily
-
-### Prepare
-```
-~]$ cd
-~]$ git clone https://github.com/kuritaka/cmdref
-~]$ cd cmdref
-~]$ chmod 755 *.sh
-```
-
-### Execute
-```
-~]$ ./grep_cmdref.sh <KEYWORD>
-```
-
-more detail
-```
-~]$ view /xxxx/xxxx/xxxx/file
-```
-
-
 ### Example
 
 ```
-~]$ cmdref-grep useradd
+~]$ cmdrefgrep useradd
 /home/taka/cmdref/linux/allcommand_user_group.sh         # useradd
 /home/taka/cmdref/linux/allcommand_user_group.sh         useradd -u UID -g GROUP -G GROUP1,GROUP2 -s /bin/bash -d HOME_DIR LOGIN
 /home/taka/cmdref/linux/allcommand_user_group.sh         # useradd to create Adminuser on RHEL
@@ -95,25 +74,43 @@ cmdrefnet/linux/time_ntp_chrony_ptp/chrony.sh:chrony makestep # Correct the time
 $ tree -a -I .git
 .
 ├── README.md
-├── cd.sh
-├── cmdrefnet_update.sh
+├── cloud
+│   └── aws
+│       └── aws_basic.sh
+├── cmdrefgrep.sh
+├── cmdrefupdate.sh
 ├── git.sh
 ├── linux
-│   ├── allcommand_user_group.sh
+│   ├── all_user_group.sh
+│   ├── awk.sh
+│   ├── cron.sh
 │   ├── date.sh
 │   ├── dig.sh
+│   ├── find.sh
 │   ├── network
-│   │   └── tcpdump.sh
+│   │   ├── how-to-check-publick-ip.sh
+│   │   ├── tcpdump.sh
+│   │   └── traceroute.sh
+│   ├── rsync.sh
+│   ├── scp.sh
+│   ├── sed.sh
+│   ├── sort.sh
+│   ├── ssh.sh
+│   ├── tar.sh
 │   └── time_ntp_chrony_ptp
 │       ├── chrony.sh
 │       └── ntp.sh
+├── middleware
+│   ├── docker.sh
+│   ├── kvm.sh
+│   ├── vagrant.sh
+│   └── xen.sh
 ├── programming
 │   └── shellscript.sh
-├── ssh.sh
-├── vagrant.sh
-└── vim.sh
+└── software
+    └── vim.sh
 
-4 directories, 14 files
+8 directories, 28 files
 ```
 
 
