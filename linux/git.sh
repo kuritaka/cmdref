@@ -75,6 +75,18 @@ git diff SHA..other-SHA   # Comparing two branches
 git diff --name-only
 
 
+#--------------------------------------------------------
+# Difference between local and remote branches
+#--------------------------------------------------------
+git fetch origin master
+
+git diff --stat master origin/master
+git diff --name-status master origin/master
+git diff master origin/master
+
+git log --oneline master origin/master
+git log master origin/master
+
 
 
 #--------------------------------------------------------
