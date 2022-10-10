@@ -1,7 +1,7 @@
 #!/bin/bash
 # docker cheat sheet
 # Ref: https://cmdref.net/middleware/container/docker/index.html
-
+exit
 
 #===========================================
 # Docker image Operation

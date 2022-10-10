@@ -1,6 +1,7 @@
 #!/bin/bash
 #Ref:
 #https://cmdref.net/os/linux/command/index.html
+exit
 
 find /dir -type f -name "*.log*" -mtime +7 -exec rm -rf {} \;   #"-mtime +7" is 7 days ago
 

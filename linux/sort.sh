@@ -1,7 +1,7 @@
 #!/bin/bash
 #Ref:
 #https://cmdref.net/os/linux/command/sort.html
-
+exit
 
 sort -k 2 -t ":" test.txt
 

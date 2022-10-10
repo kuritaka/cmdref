@@ -1,3 +1,6 @@
+#!/bin/bash
+exit
+
 # cheat sheet for vagrant
 
 cd /p/vm_img/vagrant/centos7a ; vagrant up ; vagrant ssh

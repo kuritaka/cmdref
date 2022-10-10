@@ -1,6 +1,6 @@
 #!/bin/bash
 # Ref: https://cmdref.net/os/linux/command/grep.html
-
+exit
 
 grep -Ev "^#|^$" /etc/ssh/sshd_config
 
