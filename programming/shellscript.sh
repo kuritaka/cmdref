@@ -43,7 +43,7 @@ check_hostname(){
 }
 
 
-check_here(){
+check_heredocument(){
 
 OUT="/tmp/out_${TDAY}.txt"
 
@@ -55,7 +55,19 @@ OUT
 }
 
 
+test_expr(){
+
+i=2
+v1=$(( (i + 1) * 5 ))    #recommend
+v2=$(expr \( $i + 1 \) \* 5)
+
+echo "'\$(( (i + 1) * 5 )) ' = $v1"
+echo "'\$(expr \( $i + 1 \) \* 5)' = $v2"
+}
+
+
 #check_user
 check_arg
 check_hostname
-check_here
+check_heredocument
+test_expr

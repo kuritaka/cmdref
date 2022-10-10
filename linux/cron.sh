@@ -1,7 +1,7 @@
 #!/bin/bash
 #Ref:
 #https://cmdref.net/os/linux/cron/index.html
-
+exit
 
 #========================================
 # /var/spool/cron/USER

@@ -1,7 +1,6 @@
 #!/bin/bash
 # Ref:
 # https://cmdref.net/os/linux/command/tar.html
-
 exit
 
 

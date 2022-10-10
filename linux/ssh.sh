@@ -1,5 +1,6 @@
+#!/bin/bash
 # cheat sheet for ssh
-
+exit
 
 ssh x.x.x.x  hostname
 
