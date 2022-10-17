@@ -1,6 +1,6 @@
 #!/bin/bash
 # How to check public ip
-
+exit
 
 $ curl httpbin.org/ip
 {
