@@ -2,6 +2,7 @@
 
 #Ref:
 # https://cmdref.net/os/linux/command/tcpdump.html
+exit
 
 tcpdump -n  not port 22
 tcpdump -n  not arp and not port 22
