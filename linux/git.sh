@@ -30,6 +30,13 @@ git rebase main
 git staus
 git add -A
 git commit -m "[update] #PR Number summary"
+or
+git staus
+git diff
+git add -A
+git diff --cached
+git commit -m "[update] #PR Number summary"
+
 
 
 #Remote
