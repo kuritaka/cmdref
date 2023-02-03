@@ -3,6 +3,12 @@
 #########################################################
 exit
 
+#--------------------------------------------------------
+#How to bring from remote repositories
+#--------------------------------------------------------
+git clone https://example.com/user/project.git
+or
+git clone http://xxxxxx.com/project-name.git project-name.`date +%Y%m%d`
 
 #--------------------------------------------------------
 #Branch
