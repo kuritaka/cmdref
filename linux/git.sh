@@ -19,18 +19,20 @@ git branch -a # (or git branch --all) # show all branches both local and remote
 
 ### Method 1: create branch and checkout with same time
 git checkout main
-git pull
+git pull # update
 git checkout -b new-branch-name
 
 ### Method 2: create branch and checkout
 git checkout main # move to main
-git pull
+git pull #update
 git branch new-branch-name
 git checkout new-branch-name
 
 
-#
+#After creating a branch, someone else pushed it, so I changed the base repository
 git rebase main
+or
+git rebase master
 
 
 git staus
