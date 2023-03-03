@@ -52,7 +52,7 @@ git remote -v  #Check
 git remote add origin https://github.com/UserName/ProjectName
 
 git push origin new-branch-name #push to new-branch-name
-
+or
 git push origin main #push to remote main, we don't recommend to use this.
 
 
