@@ -17,16 +17,17 @@ git branch # check branch in local
 git branch -r # (or git branch --remotes) # show remote branches
 git branch -a # (or git branch --all) # show all branches both local and remote
 
-### Method 1: create branch and checkout with same time
-git checkout main
-git pull # update
-git checkout -b new-branch-name
-
-### Method 2: create branch and checkout
+### Method 1: create branch and checkout
 git checkout main # move to main
 git pull #update
 git branch new-branch-name
 git checkout new-branch-name
+
+### Method 2: create branch and checkout with same time
+git checkout main
+git pull # update
+git checkout -b new-branch-name
+
 
 
 #After creating a branch, someone else pushed it, so I changed the base repository
@@ -95,8 +96,12 @@ git diff --name-only
 #--------------------------------------------------------
 # Difference between local and remote branches
 #--------------------------------------------------------
+#bring remote information
+git fetch origin <Branch>
 git fetch origin master
 
+
+#Check diff
 git diff --stat master origin/master
 git diff --name-status master origin/master
 git diff master origin/master
