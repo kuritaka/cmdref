@@ -96,8 +96,12 @@ git diff --name-only
 #--------------------------------------------------------
 # Difference between local and remote branches
 #--------------------------------------------------------
+#bring remote information
+git fetch origin <Branch>
 git fetch origin master
 
+
+#Check diff
 git diff --stat master origin/master
 git diff --name-status master origin/master
 git diff master origin/master
